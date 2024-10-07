@@ -17,7 +17,7 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task2.V3.Lib
                         matrix[i, j] = 0;
                     }
 
-                    output += matrix[i, j] + "\t";
+                    output += matrix[i, j] + ";";
                 }
                 output += "\n";
             }
