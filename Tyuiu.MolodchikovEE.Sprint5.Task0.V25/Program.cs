@@ -30,9 +30,11 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task0.V25
 
             DataService ds = new DataService();
 
+            int x = 3;
+            var result = ds.SaveToFileTextData(x);
+            string filePath = "OutPutFileTask0.txt";
+            File.WriteAllText(filePath, result.ToString());
 
-
-            var result = ds.SaveToFileTextData(0);
             Console.WriteLine(result);
             Console.ReadKey();
         }
