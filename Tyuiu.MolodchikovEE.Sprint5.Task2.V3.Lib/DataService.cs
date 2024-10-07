@@ -17,9 +17,17 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task2.V3.Lib
                         matrix[i, j] = 0;
                     }
 
-                    output += matrix[i, j] + ";";
+                    output += matrix[i, j];
+
+                    if (j < matrix.GetLength(1) - 1)
+                    {
+                        output += ";";
+                    }
                 }
-                output += "\n";
+                if (i < matrix.GetLength(0) - 1)
+                {
+                    output += "\n";
+                }
             }
             return output;
         }
