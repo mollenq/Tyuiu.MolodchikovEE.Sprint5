@@ -6,7 +6,7 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task0.V25.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            double result = Math.Round((3 * (Math.Pow(x,4) + 1) ) / (Math.Pow(x,3)), 3);
+            double result = Math.Round((3 * Math.Pow(x,4) + 1 ) / (Math.Pow(x,3)), 3);
 
             return result.ToString();
         }
