@@ -8,9 +8,9 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task3.V26.Lib
         {
             double calculation = Math.Round((0.7 * (Math.Pow(x, 3))) + (1.52 * (Math.Pow(x, 2))), 3);
             byte[] byteArray = BitConverter.GetBytes(calculation);
-            string filePath = "OutPutFileTask3.bin";
-            File.WriteAllBytes(filePath, byteArray);
-            return Path.GetFullPath(filePath);
+            string tempFilePath = Path.GetTempFileName();
+            File.WriteAllBytes(tempFilePath, byteArray);
+            return tempFilePath;
         }
     }
 }
