@@ -7,8 +7,8 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task3.V26.Lib
         public string SaveToFileTextData(int x)
         {
             double calculation = Math.Round((0.7 * (Math.Pow(x, 3))) + (1.52 * (Math.Pow(x, 2))), 3);
-            string result = calculation.ToString("F3");
-            byte[] byteArray = BitConverter.GetBytes(calculation);
+            byte[] byteArray;
+            byteArray = BitConverter.GetBytes(calculation);
             string base64String = Convert.ToBase64String(byteArray);
             return base64String;
         }
