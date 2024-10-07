@@ -10,6 +10,10 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task3.V26.Lib
             byte[] byteArray;
             byteArray = BitConverter.GetBytes(calculation);
             string base64String = Convert.ToBase64String(byteArray);
+
+            string filePath = "OutPutFileTask3.bin";
+            using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Create)));
+            File.WriteAllText(filePath, base64String.ToString());
             return base64String;
         }
     }
