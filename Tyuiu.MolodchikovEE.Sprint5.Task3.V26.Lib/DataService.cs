@@ -6,7 +6,10 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task3.V26.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            return Convert.ToString(Math.Round( (0.7 * (Math.Pow(x,3))) + (1.52 * (Math.Pow(x,2))) ,3));
+            double calculation = Math.Round((0.7 * (Math.Pow(x, 3))) + (1.52 * (Math.Pow(x, 2))), 3);
+            byte[] byteArray = BitConverter.GetBytes(calculation);
+            string base64String = Convert.ToBase64String(byteArray);
+            return base64String;
         }
     }
 }
