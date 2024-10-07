@@ -7,7 +7,7 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task1.V12.Lib
         public string SaveToFileTextData(int startValue, int stopValue)
         {
             string output = "";
-            for (int i = startValue; i < stopValue; i++) 
+            for (int i = startValue; i <= stopValue; i++) 
             {
 
                 double numerator = 5 * i + 2.5;
