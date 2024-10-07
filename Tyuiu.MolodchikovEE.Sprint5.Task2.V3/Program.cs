@@ -31,8 +31,22 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task2.V3
 
             DataService ds = new DataService();
 
-            var result = ds.YOURFUNCTION();
+            int[,] matrix = new int[3,3];
+
+            Console.WriteLine("Введите элементы массива 3x3:");
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"matrix[{i},{j}] = ");
+                    matrix[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            var result = ds.SaveToFileTextData(matrix);
             Console.WriteLine(result);
+            string filePath = "OutPutFileTask2.txt";
+            File.WriteAllText(filePath, result.ToString());
             Console.ReadKey();
         }
     }
