@@ -7,12 +7,15 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task7.V26.Lib
     {
         public string LoadDataAndSave(string path)
         {
+
             string fileContent = File.ReadAllText(path);
             string pattern = @"\b[A-Za-z]+\b";
             string modifiedContent = Regex.Replace(fileContent, pattern, "word");
-            string output = Path.GetTempPath();
-            File.WriteAllText(output, modifiedContent);
-            return output;
+            string outputDirectory = Path.GetTempPath();
+            string outputFileName = "OutPutDataFileTask7V26.txt";
+            string outputFilePath = Path.Combine(outputDirectory, outputFileName);
+            File.WriteAllText(outputFilePath, modifiedContent);
+            return outputFilePath;
         } 
     }
 }
