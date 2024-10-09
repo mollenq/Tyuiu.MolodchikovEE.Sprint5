@@ -11,7 +11,7 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Lib
                 throw new FileNotFoundException($"Файл не найден: {path}");
             }
             string fileContent = File.ReadAllText(path);
-            int.TryParse(fileContent, out int x);
+            double.TryParse(fileContent, out double x);
             double result = Math.Round(Math.Sin(2/(3*x)) + Math.Pow(x,2),3);
             return result;
         }
