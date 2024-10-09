@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolodchikovEE.Sprint5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Test", "Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Test\Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Test.csproj", "{908DE9A2-5055-48D3-90C5-90D405921992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolodchikovEE.Sprint5.Task5.V9.Lib", "Tyuiu.MolodchikovEE.Sprint5.Task5.V9.Lib\Tyuiu.MolodchikovEE.Sprint5.Task5.V9.Lib.csproj", "{C3B34221-4B22-429F-AFA3-524E6472F335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolodchikovEE.Sprint5.Task5.V9", "Tyuiu.MolodchikovEE.Sprint5.Task5.V9\Tyuiu.MolodchikovEE.Sprint5.Task5.V9.csproj", "{4F84DE37-82C0-4F76-9215-C593A754D563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolodchikovEE.Sprint5.Task5.V9.Test", "Tyuiu.MolodchikovEE.Sprint5.Task5.V9.Test\Tyuiu.MolodchikovEE.Sprint5.Task5.V9.Test.csproj", "{7DEB046D-7298-4026-91B1-8FE9101D416F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,5 +108,17 @@ Global
 		{908DE9A2-5055-48D3-90C5-90D405921992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908DE9A2-5055-48D3-90C5-90D405921992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{908DE9A2-5055-48D3-90C5-90D405921992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B34221-4B22-429F-AFA3-524E6472F335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B34221-4B22-429F-AFA3-524E6472F335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B34221-4B22-429F-AFA3-524E6472F335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B34221-4B22-429F-AFA3-524E6472F335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F84DE37-82C0-4F76-9215-C593A754D563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F84DE37-82C0-4F76-9215-C593A754D563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F84DE37-82C0-4F76-9215-C593A754D563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F84DE37-82C0-4F76-9215-C593A754D563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEB046D-7298-4026-91B1-8FE9101D416F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEB046D-7298-4026-91B1-8FE9101D416F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEB046D-7298-4026-91B1-8FE9101D416F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEB046D-7298-4026-91B1-8FE9101D416F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
