@@ -4,7 +4,10 @@
     {
         public void TestMethod1()
         {
-            Assert.AreEqual(1, 1);
+            int x = 2;
+            double result = Math.Round((0.7 * (Math.Pow(x, 3))) + (1.52 * (Math.Pow(x, 2))), 3);
+            double wait = 11.68;
+            Assert.AreEqual(wait, result);
         }
     }
 }
