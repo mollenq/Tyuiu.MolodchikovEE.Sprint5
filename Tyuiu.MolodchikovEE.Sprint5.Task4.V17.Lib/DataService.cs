@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Collections;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Lib
 {
@@ -6,13 +7,16 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            if (!File.Exists(path))
-            {
-                throw new FileNotFoundException($"Файл не найден: {path}");
-            }
             string fileContent = File.ReadAllText(path);
-            double x = Convert.ToDouble(fileContent);
-            double result = Math.Round(Math.Sin(2/(3*x)) + Math.Pow(x,2),3);
+            if (!double.TryParse(fileContent, out double x))
+            {
+                throw new FormatException("Содержимое файла не является допустимым вещественным числом.");
+            }
+            if (x == 0)
+            {
+                throw new InvalidOperationException("Значение из файла не может быть нулевым.");
+            }
+            double result = Math.Round(Math.Sin(2 / (3 * x)) + Math.Pow(x, 2), 3);
             return result;
         }
     }
