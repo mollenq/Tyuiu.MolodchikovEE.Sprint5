@@ -18,7 +18,7 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Lib
 
 
 
-            double x = Double.Parse(File.ReadAllText("/app/data/AssesmentData/C#/Sprint5Task4/InPutDataFileTask4V17.txt"));
+            double x = Convert.ToDouble(File.ReadAllText(path));
             double result = Math.Round(Math.Sin(2 / (3 * x)) + Math.Pow(x, 2), 3);
 
             return result;
