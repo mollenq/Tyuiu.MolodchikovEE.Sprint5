@@ -14,8 +14,12 @@ namespace Tyuiu.MolodchikovEE.Sprint5.Task4.V17.Lib
 
             //string tempFilePath = Path.GetTempFileName();
             //File.WriteAllText(tempFilePath, "5");
-            double x = Double.Parse(File.ReadAllText(path));
+
+
+
+            double x = Double.Parse(File.ReadAllText(Path.Combine(Path.GetTempPath(),path)));
             double result = Math.Round(Math.Sin(2 / (3 * x)) + Math.Pow(x, 2), 3);
+
             return result;
         }
     }
